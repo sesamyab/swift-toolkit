@@ -21,6 +21,7 @@ final class WebView: WKWebView {
     init(editingActions: EditingActionsController) {
         self.editingActions = editingActions
         super.init(frame: .zero, configuration: .init())
+        scrollView.alwaysBounceVertical = false
     }
     
     required init?(coder: NSCoder) {
